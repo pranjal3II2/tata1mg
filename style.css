@@ -1,0 +1,88 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: sticky;
+}
+
+a{
+    text-decoration: none;
+    color: black;        
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;    
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.logo{
+    height: 20px;    
+}
+
+.gap{
+    margin-left: 100px;
+}
+.searchBarLeft{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-left: 7%;
+    margin-top: 18px;
+    border: 2px solid grey;        
+    height: 20px;
+    width: 60vw;
+    border-radius: 10px;
+}
+
+input{
+    border: none;
+    width: 600px;
+}
+span{
+    display: flex;
+    flex-direction: row;    
+}
+
+.red{
+    color: crimson;
+    text-decoration: underline;    
+}
+
+button{    
+    background-color: crimson;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 20px;
+}
+
+.searchBar{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.searchBarRight{    
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    width: 30vw;
+}
+
+select{
+    height: 20px;
+}
+
+.dropdowns {
+    margin-top: 20px;
+    margin-left: 6%;
+    display: flex;
+    gap: 40px;        
+} 
