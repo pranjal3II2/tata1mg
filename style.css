@@ -69,7 +69,8 @@ button{
     gap: 3%;
 }
 
-.searchBarRight{    
+.searchBarRight{  
+    margin-right:auto;
     display: flex;
     flex-direction: row;
     height: 20px;
