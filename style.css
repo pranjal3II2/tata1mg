@@ -30,15 +30,34 @@ a{
     margin-left: 100px;
 }
 .searchBarLeft{
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    margin-left: 7%;
-    margin-top: 18px;
-    border: 2px solid grey;        
-    height: 20px;
-    width: 60vw;
+    display: grid;
+    grid-template-columns: auto 1fr auto;    
+    align-items: center;
+    gap: 0.75rem;    
+    border: 2px solid grey;            
     border-radius: 10px;
+    padding: 0.4rem 0.6rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.searchBarLeft span {
+    display: flex;
+    align-items: center;
+    gap: 0.5 rem;
+    white-space: nowrap;
+}
+
+.searchBarLeft input{
+    width: 100%;
+    border: none;
+    font-size: 1rem;        
+    padding: 0.25rem 0.5rem;
+}
+
+.searchBarLeft img{
+    height: 20px;
+    width: auto;
 }
 
 input{
@@ -55,35 +74,202 @@ span{
     text-decoration: underline;    
 }
 
-button{    
-    background-color: crimson;
-    border-radius: 5px;
-    margin-top: 20px;
-    height: 20px;
-}
+
 
 .searchBar{
     margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 3%;
+    display: grid;
+    grid-template: 1fr 1fr;
+    align-items: center;
+    padding: 0.5rem 6%;
+    gap: 1rem;
+    box-sizing: border-box;
 }
 
-.searchBarRight{  
-    margin-right:auto;
-    display: flex;
-    flex-direction: row;
-    height: 20px;
-    width: 30vw;
+.searchBarRight{    
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.5rem;
+    align-items: center;
+    justify-items: end;    
+    width: 100%;
 }
+
+.searchBarRight p{
+    margin: 0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.searchBarRight button{
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;        
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .searchBar {
+        grid-template-columns: 1fr;
+    }
+    .searchBarRight{
+        grid-template-columns: 1fr;
+        justify-items: start;
+        margin-top: 0.75rem
+    }
+}
+
 
 select{
     height: 20px;
 }
 
-.dropdowns {
-    margin-top: 20px;
+.dropdowns {    
     margin-left: 6%;
     display: flex;
     gap: 40px;        
 } 
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+}
+
+.container .one{
+    display: flex;
+    flex-direction: column;    
+    margin-left: 5%;
+    border: 2px solid rgb(230, 230, 230);
+}
+
+.container .one p{
+    margin-left: 5%;
+}
+
+.container .two{
+    margin-left: 10%;    
+}
+
+.mediRoute{
+    color: rgb(131, 131, 131);
+}
+
+.mediHead{
+    font-size: large;
+    font-weight: bold;
+}
+
+.alert{
+    font-size: smaller;
+}
+
+.upperBold{
+    font-size: small;
+    font-weight: bold;
+    color:  rgb(71, 71, 71);
+}
+
+.mediComp{
+    font-size: x-small;
+    color:  rgb(71, 71, 71);
+    text-decoration: underline;
+}
+
+.mediCompStore{
+    font-size: x-small;
+    color:  rgb(71, 71, 71);    
+}
+
+.click{
+    font-size: smaller;
+    text-decoration: underline;
+    color: crimson;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+}
+
+.productHead{
+    font-size: small;
+    font-weight: bold;
+}
+
+.productPara{
+    font-size: small;
+    color: rgb(82, 82, 82);
+}
+
+.container .three{
+    margin-top: 10%;    
+}
+
+.insights{
+    background-color: rgba(74, 213, 132, 0.156)
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.line{
+    text-decoration: line-through;
+    color: rgb(82, 82, 82);
+}
+
+.mrp{
+    color: rgb(82, 82, 82);
+}
+
+.discount{
+    color: rgb(0, 255, 0);
+}
+
+.sold{
+    background-color: pink;
+    color: crimson;
+    border: none;
+}
+
+.mediButton{
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;        
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 2.5% 0 5% 0;
+    width: 95%;
+}
+
+.threeOne{
+    border-radius: 5px;
+    border: 2px solid rgb(230, 230, 230);    
+}
+
+.content{
+    margin-left: 5%;
+}
+
+.available{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.clinidipine{
+    width: 50%;
+    height: 25%;
+    
+}
+
+.click2{
+    font-size: smaller;
+    text-decoration: underline;    
+}
