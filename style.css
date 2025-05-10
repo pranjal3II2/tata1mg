@@ -217,10 +217,6 @@ select {
     height: 20px;
 }
 
-/* .dropdowns {
-    display: grid;
-    grid-template-columns: 12% 10% 10% 10% 10% 10% 11% 8% 10%;
-} */
 
 .dropdowns{
     display: flex;
