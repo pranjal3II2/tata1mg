@@ -1,259 +1,379 @@
-.header{
+.header {
     display: flex;
     flex-direction: row;
     gap: 5px;
     position: sticky;
 }
 
-a{
+a {
     text-decoration: none;
-    color: black;        
+    color: black;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
-    gap: 40px;    
+    gap: 40px;
 }
 
-.right{
+.right {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.logo{
-    height: 3vh;    
+.logo {
+    height: 3vh;
     width: 2.5vw;
 }
 
-.gap{
-    margin-left: 100px;
+.gap {
+    margin-left: 10%;
 }
-.searchBarLeft{
+
+.searchBar {
     display: grid;
-    grid-template-columns: auto 1fr auto;    
-    align-items: center;
-    gap: 0.75rem;    
-    border: 2px solid grey;            
-    border-radius: 10px;
-    padding: 0.4rem 0.6rem;
-    width: 100%;
-    box-sizing: border-box;
+    grid-template-columns: 60% 35%;
 }
 
-.searchBarLeft span {
+.searchBarLeft {
+    margin-left: 10%;
     display: flex;
-    align-items: center;
-    gap: 0.5 rem;
-    white-space: nowrap;
+    flex-direction: row;
+    gap: 10px;
 }
 
-.searchBarLeft input{
-    width: 100%;
+.searchBarLeft input {
+    border-radius: 5px;    
+    width: 30vw;
+    height: 5vh;
     border: none;
-    font-size: 1rem;        
-    padding: 0.25rem 0.5rem;
+    text-align: center;        
 }
 
-.searchBarLeft img{
+.searchBarLeft img {
     height: 20px;
-    width: auto;
+    width: 20px;
 }
 
-input{
+input {
     border: none;
     width: 600px;
 }
-span{
+
+span {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
 }
 
-.red{
+.red {
     color: crimson;
-    text-decoration: underline;    
+    text-decoration: underline;
 }
 
 
-
-.searchBar{
-    margin-top: 10px;
-    display: grid;
-    grid-template: 1fr 1fr;
+.searchBarRight {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     align-items: center;
-    padding: 0.5rem 6%;
-    gap: 1rem;
-    box-sizing: border-box;
-}
-
-.searchBarRight{    
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 0.5rem;
-    align-items: center;
-    justify-items: end;    
+    justify-items: end;
     width: 100%;
 }
 
-.searchBarRight p{
-    margin: 0;
-    font-size: 0.9rem;
-    white-space: nowrap;
-}
 
-.searchBarRight button{
+.searchBarRight button {
     background-color: crimson;
     color: white;
     border: none;
-    border-radius: 5px;        
-    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
     cursor: pointer;
-    white-space: nowrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 782px) {
     .searchBar {
-        grid-template-columns: 1fr;
+        display: flex;      
+        flex-direction: column;
     }
-    .searchBarRight{
-        grid-template-columns: 1fr;
-        justify-items: start;
-        margin-top: 0.75rem
-    }
-    .header{
+    .searchBarLeft{
         display: flex;
         flex-direction: column;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .container .one,
+    .container .two,
+    .container .three{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .container .threeTwo{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .content{
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .searchBarLeft input{
+        width: 100%;
+    }
+    .searchBarRight{
+        width: 20%;
+    }
+    .dropdowns{
+       display: flex;
+       flex-direction: column;       
+       gap: 10px;
+       padding: 10px;
+       width: 100%;
+       box-sizing: border-box;
+    }
+
+    .dropdowns select{
+        width: 100%;
+        font-size: 14px;
+    }
+    .price{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+        font-size: 14px;
+    }
+    .content button{
+        width: 100%;
+        font-size: 14px;
+        padding: 0.4rem 0.6rem;
+        margin: 10px 0;
+        white-space: normal;
+        box-sizing: border-box;
+    }
+    .gap{
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width:1024px){
+    .dropdowns{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: stretch;
+    }
+    .dropdowns select{
+        width: 100%;
+        font-size: 14px;
+    }
+    .gap{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .right{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
     .navbar{
         display: flex;
         flex-direction: column;
-    }
-    .right{
-        display: flex;
-        flex-direction: column;
-    }
+        gap: 40px;
+    }    
 }
-
-
-select{
+.right{
+    justify-content: center;
+    align-items: center;
+}
+select {
     height: 20px;
 }
 
-.dropdowns {    
-    display: grid;       
-    grid-template-columns: 12% 10% 10% 10% 10% 10% 11% 8% 10%;
-} 
-
-.container{
+/* .dropdowns {
     display: grid;
-    grid-template-columns: 20% 50% 30%;
+    grid-template-columns: 12% 10% 10% 10% 10% 10% 11% 8% 10%;
+} */
+
+.dropdowns{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2%;
+    padding: 10px;
+    justify-content: center;
 }
 
-.container .one{
+.dropdowns >div {
+    flex: 1 1 45%; /*two columns on small screen */
+    min-width: 120px;/*prevent collapsing too much*/
+}
+
+@media (max-width: 600px) {
+    .dropdowns > div{
+        flex: 1 1 100%; /*full width on very small screen*/
+    }
+    select{
+        font-size: 0.9rem;
+        padding: 4px;
+        height: 100%;
+    }
+}
+.container {
+   display: grid; 
+   grid-template-columns: 20% 50% 30%;
+   padding: 10px;
+}
+
+.container .one {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     margin-left: 5%;
     border: 2px solid rgb(230, 230, 230);
 }
 
-.container .one p{
+.container .one p {
     margin-left: 5%;
 }
 
-.container .two{
-    margin-left: 10%;    
+.container .two {
+    margin-left: 10%;
 }
 
-.mediRoute{
+.container .three {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.container .threeOne,
+.container .threeTwo{
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.mediRoute {
     color: rgb(131, 131, 131);
 }
 
-.mediHead{
+.mediHead {
     font-size: large;
     font-weight: bold;
 }
 
-.alert{
+.alert {
     font-size: smaller;
 }
 
-.upperBold{
+.upperBold {
     font-size: small;
     font-weight: bold;
-    color:  rgb(71, 71, 71);
+    color: rgb(71, 71, 71);
 }
 
-.mediComp{
+.mediComp {
     font-size: x-small;
-    color:  rgb(71, 71, 71);
+    color: rgb(71, 71, 71);
     text-decoration: underline;
 }
 
-.mediCompStore{
+.mediCompStore {
     font-size: x-small;
-    color:  rgb(71, 71, 71);    
+    color: rgb(71, 71, 71);
 }
 
-.click{
+.click {
     font-size: smaller;
     text-decoration: underline;
     color: crimson;
 }
 
-.product{
+.product {
     display: flex;
     flex-direction: row;
 }
 
-.productHead{
+.productHead {
     font-size: small;
     font-weight: bold;
 }
 
-.productPara{
+.productPara {
     font-size: small;
     color: rgb(82, 82, 82);
 }
 
-.container .three{
-    margin-top: 10%;    
+.container .three {
+    margin-top: 10%;
 }
 
-.insights{
+.insights {
     background-color: rgba(74, 213, 132, 0.156)
 }
 
-.price{
+.price {
     display: flex;
-    flex-direction: row;
-    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
 }
 
-.line{
+.price p{
+    font-size: 14px;
+}
+.line {
     text-decoration: line-through;
     color: rgb(82, 82, 82);
 }
 
-.mrp{
+.mrp {
     color: rgb(82, 82, 82);
 }
 
-.discount{
+.discount {
     color: rgb(0, 255, 0);
 }
 
-.sold{
+.sold {
     background-color: pink;
     color: crimson;
     border: none;
 }
 
-.mediButton{
+.mediButton {
     background-color: crimson;
     color: white;
     border: none;
-    border-radius: 5px;        
+    border-radius: 5px;
     padding: 0.4rem 0.8rem;
     cursor: pointer;
     white-space: nowrap;
@@ -261,32 +381,38 @@ select{
     width: 95%;
 }
 
-.threeOne{
+.threeOne {
     border-radius: 5px;
-    border: 2px solid rgb(230, 230, 230);    
+    border: 2px solid rgb(230, 230, 230);
 }
 
-.content{
+.content {
     margin-left: 5%;
 }
 
-.available{
+.available {
     font-size: medium;
     font-weight: bold;
 }
 
-.clinidipine{
+.clinidipine {
     width: 50%;
     height: 25%;
-    
+
 }
 
-.click2{
+.click2 {
     font-size: smaller;
-    text-decoration: underline;    
+    text-decoration: underline;
 }
 
-.productImage{    
+.productImage {
     width: 10vw;
-    height: 20vh;        
+    height: 20vh;
+    margin-right: 40px;
+}
+
+.language {
+    width: 40%;
+    height: 60%;
 }
